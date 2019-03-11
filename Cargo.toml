@@ -1,16 +1,16 @@
 [package]
 name = "passphrase"
-version = "1.0.0"
+version = "1.0.2"
 authors = ["Charles Chege <charleschege@protonmail.ch>"]
 edition = "2018"
 
 description = "Passhrase is a pure Rust crate focused on generating solid passphrases at the touch of a button , giving users the ability to generate memorable strong passphrases that takes thousands of years to crack using specialized password cracking computers or taking forever for normal computers to crack."
 
-documentation = "http://docs.rs/passphrase"
+repository = "https://github.com/iamcharleschege/passphrase.git"
 keywords = ["password", "passhrase", "token", "random", "generator"]
 categories = ["command-line-utilities"]
 license = "Apache-2.0"
-
+readme = "README.md"
 
 [dependencies]
 rand = "0.6.5"
