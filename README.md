@@ -19,3 +19,18 @@ To add it manually to `Cargo.toml` file.
 passhrase_lib = #enter the version from crates.io here
 ```
 ---
+
+Usage:
+
+```
+use passhrase;
+fn main() {
+		// Generate a random passphrase
+	let random_number = passphrase_lib::gen_passphrase();
+
+		//Generate a random url
+	let random_url = passphrase_lib::gen_url();
+}
+```
+
+---
