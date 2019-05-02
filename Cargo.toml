@@ -6,14 +6,11 @@ edition = "2018"
 
 description = "Passhrase is a pure Rust crate focused on generating solid passphrases at the touch of a button , giving users the ability to generate memorable strong passphrases that takes thousands of years to crack using specialized password cracking computers or taking forever for normal computers to crack."
 
-repository = "https://github.com/iamcharleschege/passphrase.git"
+repository = "https://github.com/iamcharleschege/passphrase_lib.git"
 keywords = ["password", "passhrase", "token", "random", "generator"]
 categories = ["command-line-utilities"]
 license = "Apache-2.0"
 readme = "README.md"
 
 [dependencies]
-rand = "0.6.5"
-termion = "1.5.1"
-zxcvbn = "1.0.1"
-yansi = "0.5.0"
+rand = "*"
