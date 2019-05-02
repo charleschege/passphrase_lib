@@ -14,16 +14,29 @@
 //!
 //! [WARNING!!!] NEVER STORE THE PLAIN TEXT VERSION OF A PASSPHRASE
 //!
-//#---
+//!  ---
 
-//# use `cargo add passphrase` to install to add to your `Cargo.toml` file.
+//!  use `cargo add passphrase` to install to add to your `Cargo.toml` file.
 
-//# To add it manually to `Cargo.toml` file.
-//# ```
-//# [dependencies]
-//# passhrase_lib = #enter the version from crates.io here
-//# ```
-//#---
+//!  To add it manually to `Cargo.toml` file.
+//!  ```
+//!  [dependencies]
+//!  passhrase_lib = #enter the version from crates.io here
+//!  ```
+//!  ---
+//!  Usage:
+//!  ```
+//!  use passhrase;
+//!  fn main() {
+//!        // Generate a random passphrase
+//!  	let random_number = passphrase_lib::gen_passphrase();
+//!  
+//!  		//Generate a random url
+//!  	let random_url = passphrase_lib::gen_url();
+//!  }
+//!  ```
+//! 
+//!  ---
 
 mod dictionary;
 
