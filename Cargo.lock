@@ -29,7 +29,7 @@ version = "0.2.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "passphrase"
+name = "passphrase_lib"
 version = "1.0.2"
 dependencies = [
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",

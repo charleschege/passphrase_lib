@@ -1,4 +1,4 @@
-//! Passhrase is a pure Rust crate focused on generating solid passphrases at the touch of a button
+//! Passhrase is a pure Rust library focused on generating solid passphrases at the touch of a button
 //! , giving users the ability to generate memorable strong passphrases that takes thousands of
 //! years to crack using specialized password cracking computers or taking forever for normal
 //! computers to crack.
@@ -69,6 +69,13 @@ pub fn gen_url() -> String {
     let fourth_iteration = ENGLISH;
 
     let passphr = format!("{}-{}-{}", choose_a_word(second_iteration), choose_a_word(first_iteration),  choose_a_word(fourth_iteration));
+    
+    passphr
+}
+
+pub fn english() -> String {
+
+    let passphr = format!("{}-{}-{}", choose_a_word(ENGLISH), choose_a_word(ENGLISH),  choose_a_word(ENGLISH));
     
     passphr
 }
