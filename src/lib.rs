@@ -37,17 +37,15 @@
 //!  ```
 //! 
 //!  ---
-
+#![forbid(unsafe_code)]
 mod dictionary;
 
-use {
-    rand::{Rng, thread_rng},
-    crate::dictionary::*,
-};
+use crate::dictionary::*;
+use nanorand::{RNG, ChaCha};
 
 fn choose_a_word(data_type: &'static[&'static str]) -> &str {
     let size = data_type.len();
-    let data_type = data_type[thread_rng().gen_range(0, size)];
+    let data_type = data_type[ChaCha::new(32).generate_range(0, size)];
     data_type
 }
 
