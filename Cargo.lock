@@ -2,9 +2,9 @@
 # It is not intended for manual editing.
 [[package]]
 name = "nanorand"
-version = "0.5.0"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee0409eacc25d781c09d1853b5a40ae3ad1e641752bff319b0382f6dcba6772a"
+checksum = "3173d7bb904c5a3a2f9167eb936916a39e97124846b8316223323aed9a34d1e7"
 
 [[package]]
 name = "passphrase_lib"
